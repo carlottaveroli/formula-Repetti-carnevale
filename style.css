@@ -106,11 +106,75 @@ header p {
     margin: 5px 0;
     opacity: 0.85;
 }
+/* Sezione auto */
+.cars {
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #111111, #1a1a1a); /* sfondo scuro, coerente con piloti */
+    text-align: center;
+}
+
+.cars h3 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: white
+    text-transform: uppercase;
+}
+
+.cars .card {
+    background: #1f1f1f;
+    border-radius: 12px;
+    padding: 20px;
+    transition: 0.3s ease;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.2);
+    margin-bottom: 30px;
+}
+
+.cars .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 25px rgba(255, 0, 0, 0.6);
+}
+
+.cars .card img {
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.cars .card h4 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.cars .card p {
+    color: #eee;
+    opacity: 0.85;
+    margin: 10px 0;
+    text-align: justify;
+    font-size: 0.95rem;
+}
+
+/* Layout griglia per desktop e tablet */
+.cars {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+/* Mobile friendly */
+@media (max-width: 600px) {
+    .cars {
+        grid-template-columns: 1fr;
+    }
+}
 .breaking-news {
     width: 100%;
     height: 50px;                 /* altezza barra */
     overflow: hidden;             /* nasconde ciò che scorre fuori */
-    background-color: #ffeb3b;    /* giallo safety car */
+    background-color: #ffeb3b;    /* giallo */
     color: black;
     font-weight: bold;
     margin: 0;                    /* attaccata all’header */
@@ -136,3 +200,6 @@ header p {
     50% { color: #4caf50; }
     75% { color: #2196f3; }
     100% { transform: translateX(-100%); color: #ff0000; }
+  
+
+
