@@ -10,6 +10,18 @@
 
 <body>
     <header>
+      
+      <div class="hamburger" onclick="toggleMenu()">
+  ☰
+</div>
+
+<nav class="mobile-menu" id="mobileMenu">
+  <a href="#drivers">Piloti</a>
+  <a href="#cars">Auto</a>
+  <a href="#teams">Teams</a>
+  <a href="#vote">Vota</a>
+</nav>
+      
       <h1><b>FORMULA REPETTI</b></h1>
         <h2><i>Gran Premio di Carnevale 2026</i></h2>        
     </header>
@@ -25,7 +37,7 @@
   <p>Chi vincerà la gara? Vota ora e sfida i tuoi amici.</p>
   <a href="https://docs.google.com/forms/d/e/1FAIpQLSdT9TGRyWyIXfodX1YaASzvjiy0y7wHdz-_H4iar3fas2whyw/viewform?usp=publish-editor" class="btn" target="_blank">Vota ora!</a></button>
 </section>
-    <section class="drivers">
+    <section id="drivers" class="drivers">
         <h3> I nostri piloti </h3>
 
         <div class="card">
@@ -54,7 +66,7 @@
 
     </section>
 
-    <section class="cars">
+    <section id="cars" class="cars">
         <h3> le nostre auto</h3>
 
         <div class="card">
@@ -79,7 +91,7 @@
         </div>
  </section>
 
-<section class="teams">
+<section id="teams" class="teams">
         <h3> I nostri teams </h3>
 
         <div class="card">
@@ -127,7 +139,7 @@
  
 
 
-  <section class="cta">
+  <section id="vote" class="cta">
   <h2>Fai la tua scommessa!</h2>
   <p>Chi vincerà la gara? Vota ora e sfida i tuoi amici.</p>
   <a href="https://docs.google.com/forms/d/e/1FAIpQLSdT9TGRyWyIXfodX1YaASzvjiy0y7wHdz-_H4iar3fas2whyw/viewform?usp=publish-editor" class="btn" target="_blank">Vota ora!</a>
@@ -137,6 +149,13 @@
             <p>Formula Repetti © 2026-4ªC </p>
         </footer>
        
+      <script>
+function toggleMenu() {
+    document.getElementById("mobileMenu").classList.toggle("active");
+}
+</script>
+      
+      
 </body>
 
 </html>
